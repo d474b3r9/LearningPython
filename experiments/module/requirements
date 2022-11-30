@@ -1,0 +1,11 @@
+google-cloud-storage==1.30.0
+google-cloud-bigquery==3.0.1
+gcsfs==0.6.2
+pandas==1.1.0
+numpy==1.21.5
+db_dtypes==1.0.0
+google-cloud-secret-manager==2.10.0
+requests
+google-cloud-logging
+Flask==2.1.0
+Jinja2==3.0.3
