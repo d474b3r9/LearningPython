@@ -4,10 +4,19 @@ while True:
     user_action = input("type add, show, edit, complete or exit : ")
     user_action = user_action.strip()
 
+    file = open('todos.txt', 'r')
+    todos = file.readlines()
+    file.close()
+
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a todo: ") + "\n"
+
             todos.append(todo)
+
+            file = open('todos.txt', 'w')
+            file.writelines(todos)
+            file.close()
         case 'show':
             # adding enumerate to retrieve indexes + items together
             for index, item in enumerate(todos):
