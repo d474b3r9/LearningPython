@@ -1,4 +1,4 @@
-from Python_Mega_course.day14.modules.functions import get_todos,set_todos
+from Python_Mega_course.day14.functions import get_todos,set_todos
 
 while True:
     # Get user input ansd strip space chars from it
