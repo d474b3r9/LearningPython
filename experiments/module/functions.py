@@ -44,14 +44,10 @@ def get_secured_settings(secret_id):
     return payload
 
 # Function json.dumps
-
-
 def tojson(value):
     return json.dumps(value)
 
 # Function to send mails using retarus API
-
-
 def send_email(alerte_bu_code, alert_key_asset_code, error_path):
 
     # separate_email to true will send a separate mail for each person in the mailing list
