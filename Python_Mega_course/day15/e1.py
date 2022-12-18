@@ -1,10 +1,10 @@
-import glob
+import random
 
-#read all files
 
-myfiles = glob.glob("inc/*.txt")
-print(myfiles)
+def mystery_number(first, second):
+    found = random.randint(first, second)
+    return found
 
-for filepath in myfiles:
-    with open(filepath, 'r') as file:
-        print(file.read().upper())
+first = int(input("Choose the first number: "))
+last = int(input("Choose the second: "))
+print(mystery_number(first, last))
