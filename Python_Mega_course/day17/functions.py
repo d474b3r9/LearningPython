@@ -9,7 +9,7 @@ def get_todos(filepath=FILEPATH):
     return todos_local
 
 
-def set_todos(value_todo, filepath=FILEPATH):
+def write_todos(value_todo, filepath=FILEPATH):
     """ Write the to-do items list in the text file. """
     with open(filepath, 'w') as file:
         file.writelines(value_todo)
