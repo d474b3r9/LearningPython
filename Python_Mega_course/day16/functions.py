@@ -19,13 +19,3 @@ print(__name__)
 
 if __name__ == "__main__":
     print("Hello from functions")
-
-
-def water_state(temp,freeze,boil):
-    if temp < freeze:
-        state = 'Solid'
-    elif freeze < temp < boil:
-        state = 'Liquid'
-    else:
-        state = 'Gas'
-    return state
