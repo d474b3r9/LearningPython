@@ -13,7 +13,7 @@ choose_button2 = sg.FolderBrowse("Choose", key="folder")
 compress_button = sg.Button("Compress")
 output_label = sg.Text(key="output", text_color="green")
 
-window = sg.Window('Zip Creator', layout=[[label1, input1, choose_button1],
+window = sg.Window('My To-Do App', layout=[[label1, input1, choose_button1],
                                            [label2, input2, choose_button2],
                                            [compress_button, output_label]])
 
